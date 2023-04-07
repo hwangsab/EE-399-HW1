@@ -10,8 +10,8 @@ Code Description
 The code is written in Python and uses the following libraries:
     `numpy` for numerical computing
     `matplotlib` for data visualization
-    `math' for mathematical functions
-    'scipy' for curve fitting
+    `math` for mathematical functions
+    `scipy` for curve fitting
     
 Finding Minimum Error and Optimizing Parameters:
 The code reads a dataset of 31 points and defines a function to fit the data using least-squares curve 
