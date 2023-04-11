@@ -121,6 +121,11 @@ Fixed parameters C and D Minimum error: 99.23 at A = 0.35, B = 1.00
 ![Q2](https://user-images.githubusercontent.com/125385468/231060481-a6623426-b0bb-422e-8eef-10586133a8e4.png)
 
 #### Problem 3: Fitting and Applying Models to Datasets I
+The following graph displays the first 20 data points used as training data for a line, a parabola, and a 19th 
+degree polynomial model fit. 
+
+![Q3](https://user-images.githubusercontent.com/125385468/231058823-5b1ae054-5b7b-458d-a6fe-430cdaabdf06.png)
+
 ```
 Line Train Error: 100.59849624060148
 Parabola Train Error: 90.35835042150828
@@ -131,9 +136,12 @@ Parabola Test Data Error: 835.2050011334942
 19th Degree Polynomial Test Data Error: 9.013397831469909e+21
 ```
 
-![Q3](https://user-images.githubusercontent.com/125385468/231058823-5b1ae054-5b7b-458d-a6fe-430cdaabdf06.png)
-
 #### Problem 4: Fitting and Applying Models to Datasets II
+The following graph displays the first 10 and last 10 data points used as training data for a line, a parabola, 
+and a 19th degree polynomial model fit. 
+
+![Q4](https://user-images.githubusercontent.com/125385468/231058849-c1013ec3-dcde-4514-bf70-0d53e23b7fb6.png)
+
 ```
 Line Train Error: 68.75016908693057
 Parabola Train Error: 68.73967050163469
@@ -143,8 +151,6 @@ Line Test Data Error: 86.95136045541048
 Parabola Test Data Error: 86.16001918838907
 19th Degree Polynomial Test Data Error: 67127.9806069814
 ```
-
-![Q4](https://user-images.githubusercontent.com/125385468/231058849-c1013ec3-dcde-4514-bf70-0d53e23b7fb6.png)
 
 ## Summary and Conclusions:
 This code demonstrates how least-squares curve fitting can be used to find the parameters of a function 
