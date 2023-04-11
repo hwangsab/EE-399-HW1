@@ -48,47 +48,84 @@ Completion of this project and subsequent development and implementation of the 
 accomplished through Python as our primary programming language. 
 
 ### Code Description
-The code is written in Python and uses the following libraries:
-    `numpy` for numerical computing
-    `matplotlib` for data visualization
-    `math` for mathematical functions
-    `warnings` for error message override
-    `scipy` for curve fitting
-    
-### Finding Minimum Error and Optimizing Parameters
-The code reads a dataset of 31 points and defines a function to fit the data using least-squares curve 
-fitting. The function func(x, A, B, C, D) is a combination of a cosine function and a linear function 
-with four parameters A, B, C, D that are to be optimized. The curve_fit function from scipy library is 
-used to find the optimized values of the parameters. Then, the minimum error between the function and 
-the dataset is calculated, and the results are printed along with a plot of the function fit to the 
-data.
+The code is written in Python and uses the following libraries:  
+* `numpy` for numerical computing  
+* `matplotlib` for data visualization  
+* `math` for mathematical functions  
+* `warnings` for error message override  
+* `scipy` for curve fitting  
 
-### Generating 2D Error Landscape:
-The code also generates a 2D error landscape by sweeping through different values of the function 
+#### Problem 1: Finding Minimum Error and Optimizing Parameters
+The code reads a dataset of 31 points and defines a function to fit the data using least-squares curve 
+fitting. The function `func(X, A, B, C, D)` is a combination of a cosine function and a linear function 
+with four parameters $A$, $B$, $C$, $D$ that are to be optimized. The `curve_fit` function from scipy 
+library is used to find the optimized values of the parameters. Then, the minimum error between the 
+function and the dataset is calculated, and the results are printed along with a plot of the function 
+fit to the data. 
+
+#### Problem 2: Generating 2D Error Landscape
+The code generates a 2D error landscape by sweeping through different values of the function 
 parameters and fixing two parameters at a time. The error is calculated for each combination of 
-parameter values, and the results are plotted using pcolor from matplotlib library.
+parameter values, and the results are plotted using pcolor from matplotlib library. 
 
 The code first fixes A and B parameters and sweeps through C and D parameters, then fixes A and C 
 parameters and sweeps through B and D parameters, and finally fixes A and D parameters and sweeps 
 through B and C parameters. The min function is used to find the minimum error and the corresponding 
-parameter values.
+parameter values. 
 
-#### Problem 1:
-#### Problem 2:
-#### Problem 3:
-#### Problem 4:
+#### Problem 3: Fitting and Applying Models to Datasets I
+The code uses the first 20 data points as training data to fit a line, a parabola, and a 19th degree
+polynomial to the specified points. Then, after computing the least-square error for each of these
+models over the training points, the program then computes the least-square error for each of these
+models on the remaining 10 data points excluded from the training data, which we refer to in the code
+as the test data. 
+
+#### Problem 4: Fitting and Applying Models to Datasets II
+The code uses the first 10 and last 10 data poitns as training data to fit a line, a parabola, and a 
+19th degree polynomial to the specified points. Then, after computing the least-square error for each 
+of these models over the training points, the program then computes the least-square error for each of 
+these models on the remaining 10 data points from the middle of the data set, which were excluded from 
+the training data, which we refer to in the code as the test data. 
 
 ## Computational Results:
 
 ### Usage
 To run the code, simply run the Python file hw1.py in any Python environment. The output will be 
 printed to the console and displayed in a pop-up window. The matplotlib library is required to display 
-the 2D error landscape plot.
+the 2D error landscape plot. 
 
-#### Problem 1:
-#### Problem 2:
-#### Problem 3:
-#### Problem 4:
+#### Problem 1: Finding Minimum Error and Optimizing Parameters
+The resultant cosine model fits over the data with optimized parameters with values as follows:
+```
+A = 2.1717269828948855
+B = 0.909325796914226
+C = 0.7324885143513572
+D = 31.452772437053802
+```
+In addition, the model has an minimum error value of `1.5927258503103892`
+
+![Q1](https://user-images.githubusercontent.com/125385468/231058731-8c10079a-5188-4c47-97d7-c02ae2beb6ca.png)
+
+#### Problem 2: Generating 2D Error Landscape
+The resultant minimum error calculated is as follows:
+```
+Fixed parameters A and B Minimum error: 1.61 at C = -4.60, D = 47.27
+Fixed parameters A and C Minimum error: 72.16 at B = 0.01, D = 33.64
+Fixed parameters A and D Minimum error: 14.69 at B = 0.44, C = 3.89
+Fixed parameters B and C Minimum error: 73.17 at A = 0.10, D = 60.00
+Fixed parameters B and D Minimum error: 14.75 at A = 0.93, C = -5.00
+Fixed parameters C and D Minimum error: 99.23 at A = 0.35, B = 1.00
+```
+
+![Q2](https://user-images.githubusercontent.com/125385468/231060007-41470785-79dd-443e-baa9-9f4874bf8d47.png)
+
+#### Problem 3: Fitting and Applying Models to Datasets I
+
+![Q3](https://user-images.githubusercontent.com/125385468/231058823-5b1ae054-5b7b-458d-a6fe-430cdaabdf06.png)
+
+#### Problem 4: Fitting and Applying Models to Datasets II
+
+![Q4](https://user-images.githubusercontent.com/125385468/231058849-c1013ec3-dcde-4514-bf70-0d53e23b7fb6.png)
 
 ## Summary and Conclusions:
 This code demonstrates how least-squares curve fitting can be used to find the parameters of a function 
