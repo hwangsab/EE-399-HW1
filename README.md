@@ -32,7 +32,8 @@ $$E=\sqrt{(1/n)\sum_{j=1}^{n}(f(x_j)-y_j)^2}$$
 
 As mentioned before, the function structure represents a combination of a cosine function, a linear 
 function, and a constant, of which are determined by the parameters $A$, $B$, $C$, and $D$. This structure
-can be mathematically represented by the function $$f(x)=Acos(Bx)+Cx+D$$
+can be mathematically represented by the function:
+$$f(x)=Acos(Bx)+Cx+D$$
 These parameters are then optimized with Python code. 
 
 ## Algorithm Implementation and Development:
