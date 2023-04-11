@@ -117,13 +117,32 @@ Fixed parameters B and D Minimum error: 14.75 at A = 0.93, C = -5.00
 Fixed parameters C and D Minimum error: 99.23 at A = 0.35, B = 1.00
 ```
 
-![Q2](https://user-images.githubusercontent.com/125385468/231060007-41470785-79dd-443e-baa9-9f4874bf8d47.png)
+2D Loss Landscapes are plotted for all 6 combinations as followed:
+![Q2](https://user-images.githubusercontent.com/125385468/231060481-a6623426-b0bb-422e-8eef-10586133a8e4.png)
 
 #### Problem 3: Fitting and Applying Models to Datasets I
+```
+Line Train Error: 100.59849624060148
+Parabola Train Error: 90.35835042150828
+19th Degree Polynomial Train Error: 0.016076685015099894
+
+Line Test Data Error: 124.45472101305883
+Parabola Test Data Error: 835.2050011334942
+19th Degree Polynomial Test Data Error: 9.013397831469909e+21
+```
 
 ![Q3](https://user-images.githubusercontent.com/125385468/231058823-5b1ae054-5b7b-458d-a6fe-430cdaabdf06.png)
 
 #### Problem 4: Fitting and Applying Models to Datasets II
+```
+Line Train Error: 68.75016908693057
+Parabola Train Error: 68.73967050163469
+19th Degree Polynomial Train Error: 1.0566927249586058
+
+Line Test Data Error: 86.95136045541048
+Parabola Test Data Error: 86.16001918838907
+19th Degree Polynomial Test Data Error: 67127.9806069814
+```
 
 ![Q4](https://user-images.githubusercontent.com/125385468/231058849-c1013ec3-dcde-4514-bf70-0d53e23b7fb6.png)
 
