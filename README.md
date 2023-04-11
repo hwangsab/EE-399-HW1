@@ -38,16 +38,14 @@ function, and a constant, of which are determined by the parameters $A$, $B$, $C
 parameters are then optimized. 
 
 ## Algorithm Implementation and Development:
-
+This homework assignment works around the following dataset:
 ```
 X = np.arange(0, 31)
 Y = np.array([30, 35, 33, 32, 34, 37, 39, 38, 36, 36, 37, 39, 42, 45, 45, 41, 40, 39, 42, 44, 47, 49, 50, 49, 46, 48, 50, 53, 55, 54, 53])
 ```
 
-We used Python as our primary programming language to develop the algorithm. We utilized the Scikit-learn 
-library to perform the machine learning tasks. We implemented a K-means clustering algorithm to group the 
-text documents based on their similarity. The algorithm takes the preprocessed data as input, creates a 
-vector representation of the documents, and groups them into k clusters. 
+Completion of this project and development of the algorithm was accomplished through Python as our 
+primary programming language. 
 
 ### Code Description
 The code is written in Python and uses the following libraries:
@@ -74,12 +72,22 @@ parameters and sweeps through B and D parameters, and finally fixes A and D para
 through B and C parameters. The min function is used to find the minimum error and the corresponding 
 parameter values.
 
+#### Problem 1:
+#### Problem 2:
+#### Problem 3:
+#### Problem 4:
+
 ## Computational Results:
 
 ### Usage
 To run the code, simply run the Python file hw1.py in any Python environment. The output will be 
 printed to the console and displayed in a pop-up window. The matplotlib library is required to display 
 the 2D error landscape plot.
+
+#### Problem 1:
+#### Problem 2:
+#### Problem 3:
+#### Problem 4:
 
 ## Summary and Conclusions:
 This code demonstrates how least-squares curve fitting can be used to find the parameters of a function 
