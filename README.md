@@ -122,7 +122,7 @@ D = 31.452772437053802
 ```
 In addition, the model has an minimum error value of `1.5927258503103892`
 
-![Q1](https://user-images.githubusercontent.com/125385468/231058731-8c10079a-5188-4c47-97d7-c02ae2beb6ca.png)
+![Q1](https://user-images.githubusercontent.com/125385468/231071680-c452328b-7c99-4d80-91c0-8577614a15a9.png)
 
 #### Problem 2: Generating 2D Error Landscape
 The resultant minimum error calculated is as follows:
@@ -136,13 +136,13 @@ Fixed parameters C and D Minimum error: 99.23 at A = 0.35, B = 1.00
 ```
 
 2D Loss Landscapes are plotted for all 6 combinations as followed:
-![Q2](https://user-images.githubusercontent.com/125385468/231060481-a6623426-b0bb-422e-8eef-10586133a8e4.png)
+![Q2](https://user-images.githubusercontent.com/125385468/231071717-11467706-e529-4f1d-bba3-6471f5920e45.png)
 
 #### Problem 3: Fitting and Applying Models to Datasets I
 The following graph displays the first 20 data points used as training data for a line, a parabola, and a 19th 
 degree polynomial model fit. 
 
-![Q3](https://user-images.githubusercontent.com/125385468/231058823-5b1ae054-5b7b-458d-a6fe-430cdaabdf06.png)
+![Q3](https://user-images.githubusercontent.com/125385468/231071742-94d348a2-2248-4adf-828d-f3e9af9a42b6.png)
 
 ```
 Line Train Error: 100.59849624060148
@@ -158,7 +158,7 @@ Parabola Test Data Error: 835.2050011334942
 The following graph displays the first 10 and last 10 data points used as training data for a line, a parabola, 
 and a 19th degree polynomial model fit. 
 
-![Q4](https://user-images.githubusercontent.com/125385468/231058849-c1013ec3-dcde-4514-bf70-0d53e23b7fb6.png)
+![Q4](https://user-images.githubusercontent.com/125385468/231071779-fa8dc3e8-6866-49ca-932b-f11e48f9b65c.png)
 
 ```
 Line Train Error: 68.75016908693057
