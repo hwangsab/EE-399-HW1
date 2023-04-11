@@ -27,15 +27,13 @@ minimizing the sum of squared differences between the predicted values and the a
 This method can be extended to multiple linear regression, where there are more than one independent 
 variables. In this case, the goal is to find a plane that best fits the data points. 
 
-The models for this assignment are fit to the data with the least-squares error:
+The models for this assignment are fit to the data with the least-squares error equation:
 $$E=\sqrt{(1/n)\sum_{j=1}^{n}(f(x_j)-y_j)^2}$$
 
-and have the function structure:
-$f(x)=Acos(Bx)+Cx+D$
-
 As mentioned before, the function structure represents a combination of a cosine function, a linear 
-function, and a constant, of which are determined by the parameters $A$, $B$, $C$, and $D$. These 
-parameters are then optimized. 
+function, and a constant, of which are determined by the parameters $A$, $B$, $C$, and $D$. This structure
+can be mathematically represented by the function $$f(x)=Acos(Bx)+Cx+D$$
+These parameters are then optimized with Python code. 
 
 ## Algorithm Implementation and Development:
 This homework assignment works around the following dataset:
