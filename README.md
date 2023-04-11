@@ -8,6 +8,10 @@ The code implements a least-squares curve fitting technique to find the paramete
 that best fits a given dataset. Additionally, it generates a 2D error landscape by sweeping through 
 different values of the function parameters and fixing two parameters at a time.
 
+$$E=\sqrt{(1/n)\sum_{j=1}^{n}(f(x_j)-y_j)^2}$$
+
+$$f(x)=Acos(Bx)+Cx+D$$
+
 The Python code performs a simple linear regression analysis on a dataset containing the heights and 
 weights of individuals. It uses the scikit-learn library to fit a linear model to the data and make 
 predictions on new data. The accuracy of the model is evaluated using the mean squared error and the 
@@ -34,6 +38,12 @@ of the plane can be calculated using matrix algebra, and the model can be evalua
 as R-squared and adjusted R-squared.
 
 ## Algorithm Implementation and Development:
+
+```
+X = np.arange(0, 31)
+Y = np.array([30, 35, 33, 32, 34, 37, 39, 38, 36, 36, 37, 39, 42, 45, 45, 41, 40, 39, 42, 44, 47, 49, 50, 49, 46, 48, 50, 53, 55, 54, 53])
+```
+
 We used Python as our primary programming language to develop the algorithm. We utilized the Scikit-learn 
 library to perform the machine learning tasks. We implemented a K-means clustering algorithm to group the 
 text documents based on their similarity. The algorithm takes the preprocessed data as input, creates a 
