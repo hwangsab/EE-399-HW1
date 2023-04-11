@@ -12,22 +12,22 @@ The accompanying Python code performs optimization and machine learning on the m
 accuracy of them are then evaluated using the least squared error calculations. 
 
 ## Table of Contents:
-* Abstract
-* Introduction and Overview
-* Theoretical Background
-* Algorithm Implementation and Development
-  * Code Description
-    * Problem 1: Finding Minimum Error and Optimizing Parameters
-    * Problem 2: Generating 2D Error Landscape
-    * Problem 3: Fitting and Applying Models to Datasets I
-    * Problem 4: Fitting and Applying Models to Datasets II
-* Computational Results
-  * Usage
-  * Problem 1: Finding Minimum Error and Optimizing Parameters
-  * Problem 2: Generating 2D Error Landscape
-  * Problem 3: Fitting and Applying Models to Datasets I
-  * Problem 4: Fitting and Applying Models to Datasets II
-* Summary and Conclusion
+* [Abstract]([url](https://github.com/hwangsab/EE-399/blob/main/README.md#abstract))
+* [Introduction and Overview]([url](https://github.com/hwangsab/EE-399/blob/main/README.md#introduction-and-overview))
+* [Theoretical Background]([url](https://github.com/hwangsab/EE-399/blob/main/README.md#theoretical-background))
+* [Algorithm Implementation and Development]([url](https://github.com/hwangsab/EE-399/blob/main/README.md#algorithm-implementation-and-development))
+  * [Code Description]([url](https://github.com/hwangsab/EE-399/blob/main/README.md#code-description))
+    * [Problem 1: Finding Minimum Error and Optimizing Parameters]([url](https://github.com/hwangsab/EE-399/blob/main/README.md#problem-1-finding-minimum-error-and-optimizing-parameters))
+    * [Problem 2: Generating 2D Error Landscape]([url](https://github.com/hwangsab/EE-399/blob/main/README.md#problem-2-generating-2d-error-landscape))
+    * [Problem 3: Fitting and Applying Models to Datasets I]([url](https://github.com/hwangsab/EE-399/blob/main/README.md#problem-3-fitting-and-applying-models-to-datasets-i))
+    * [Problem 4: Fitting and Applying Models to Datasets II]([url](https://github.com/hwangsab/EE-399/blob/main/README.md#problem-4-fitting-and-applying-models-to-datasets-ii))
+* [Computational Results]([url](https://github.com/hwangsab/EE-399/blob/main/README.md#computational-results))
+  * [Usage]([url](https://github.com/hwangsab/EE-399/blob/main/README.md#usage))
+  * [Problem 1: Finding Minimum Error and Optimizing Parameters]([url](https://github.com/hwangsab/EE-399/blob/main/README.md#problem-1-finding-minimum-error-and-optimizing-parameters-1))
+  * [Problem 2: Generating 2D Error Landscape]([url](https://github.com/hwangsab/EE-399/blob/main/README.md#problem-2-generating-2d-error-landscape-1))
+  * [Problem 3: Fitting and Applying Models to Datasets I]([url](https://github.com/hwangsab/EE-399/blob/main/README.md#problem-3-fitting-and-applying-models-to-datasets-i-1))
+  * [Problem 4: Fitting and Applying Models to Datasets II]([url](https://github.com/hwangsab/EE-399/blob/main/README.md#problem-4-fitting-and-applying-models-to-datasets-ii-1))
+* [Summary and Conclusion]([url](https://github.com/hwangsab/EE-399/blob/main/README.md#summary-and-conclusions))
 
 ## Introduction and Overview:
 Fitting data to models remains a fundamental theme throughout optimization and machine learning processes. 
