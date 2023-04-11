@@ -34,6 +34,7 @@ As mentioned before, the function structure represents a combination of a cosine
 function, and a constant, of which are determined by the parameters $A$, $B$, $C$, and $D$. This structure
 can be mathematically represented by the function:
 $$f(x)=Acos(Bx)+Cx+D$$
+
 These parameters are then optimized with Python code. 
 
 ## Algorithm Implementation and Development:
@@ -43,14 +44,15 @@ X = np.arange(0, 31)
 Y = np.array([30, 35, 33, 32, 34, 37, 39, 38, 36, 36, 37, 39, 42, 45, 45, 41, 40, 39, 42, 44, 47, 49, 50, 49, 46, 48, 50, 53, 55, 54, 53])
 ```
 
-Completion of this project and development of the algorithm was accomplished through Python as our 
-primary programming language. 
+Completion of this project and subsequent development and implementation of the algorithm was 
+accomplished through Python as our primary programming language. 
 
 ### Code Description
 The code is written in Python and uses the following libraries:
     `numpy` for numerical computing
     `matplotlib` for data visualization
     `math` for mathematical functions
+    `warnings` for error message override
     `scipy` for curve fitting
     
 ### Finding Minimum Error and Optimizing Parameters
