@@ -8,14 +8,14 @@ The code implements a least-squares curve fitting technique to find the paramete
 that best fits a given dataset. Additionally, it generates a 2D error landscape by sweeping through 
 different values of the function parameters and fixing two parameters at a time.
 
+The models for this assignment are fit to the data with the least-squares error:
 $$E=\sqrt{(1/n)\sum_{j=1}^{n}(f(x_j)-y_j)^2}$$
 
+and have the function structure:
 $$f(x)=Acos(Bx)+Cx+D$$
 
-The Python code performs a simple linear regression analysis on a dataset containing the heights and 
-weights of individuals. It uses the scikit-learn library to fit a linear model to the data and make 
-predictions on new data. The accuracy of the model is evaluated using the mean squared error and the 
-coefficient of determination.
+The accompanying Python code performs optimization and machine learning on the models, of which the accuracy
+of them are then evaluated using the least squared error calculations. 
 
 ## Introduction and Overview:
 Linear regression is a popular statistical method used to model the relationship between two variables. 
