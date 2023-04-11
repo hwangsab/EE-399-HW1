@@ -27,7 +27,7 @@ accuracy of them are then evaluated using the least squared error calculations.
   * [Problem 2: Generating 2D Error Landscape](https://github.com/hwangsab/EE-399/blob/main/README.md#problem-2-generating-2d-error-landscape-1)
   * [Problem 3: Fitting and Applying Models to Datasets I](https://github.com/hwangsab/EE-399/blob/main/README.md#problem-3-fitting-and-applying-models-to-datasets-i-1)
   * [Problem 4: Fitting and Applying Models to Datasets II](https://github.com/hwangsab/EE-399/blob/main/README.md#problem-4-fitting-and-applying-models-to-datasets-ii-1)
-* [Summary and Conclusion]([url](https://github.com/hwangsab/EE-399/blob/main/README.md#summary-and-conclusions))
+* [Summary and Conclusion](https://github.com/hwangsab/EE-399/blob/main/README.md#summary-and-conclusions)
 
 ## Introduction and Overview:
 Fitting data to models remains a fundamental theme throughout optimization and machine learning processes. 
