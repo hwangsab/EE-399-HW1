@@ -8,22 +8,14 @@ The code implements a least-squares curve fitting technique to find the paramete
 that best fits a given dataset. Additionally, it generates a 2D error landscape by sweeping through 
 different values of the function parameters and fixing two parameters at a time.
 
-The models for this assignment are fit to the data with the least-squares error:
-$$E=\sqrt{(1/n)\sum_{j=1}^{n}(f(x_j)-y_j)^2}$$
-
-and have the function structure:
-$$f(x)=Acos(Bx)+Cx+D$$
-
-The accompanying Python code performs optimization and machine learning on the models, of which the accuracy
-of them are then evaluated using the least squared error calculations. 
+The accompanying Python code performs optimization and machine learning on the models, of which the 
+accuracy of them are then evaluated using the least squared error calculations. 
 
 ## Introduction and Overview:
-Linear regression is a popular statistical method used to model the relationship between two variables. 
-It assumes a linear relationship between the independent variable(s) and the dependent variable. 
-In this code, we use linear regression to model the relationship between height and weight of individuals. 
-We use the scikit-learn library, which provides a simple and efficient implementation of linear regression. 
-The code takes a dataset containing height and weight measurements as input, and outputs the linear 
-model parameters, as well as the mean squared error and coefficient of determination.
+Fitting data to models remains a fundamental theme throughout optimization and machine learning processes. 
+This assignment in particular exercises tasks of fitting various kinds of models to a fixed 2D dataset. 
+This dataset consists of 31 points, which are then fit to a function that is the combination of a cosine
+function, a linear function, and a constant value. 
 
 ## Theoretical Background:
 The theoretical foundation for this code is based on the concept of linear regression, which is a 
@@ -33,9 +25,17 @@ dependent variable and the other is considered the independent variable. The lin
 minimizing the sum of squared differences between the predicted values and the actual values.
 
 This method can be extended to multiple linear regression, where there are more than one independent 
-variables. In this case, the goal is to find a plane that best fits the data points. The coefficients 
-of the plane can be calculated using matrix algebra, and the model can be evaluated using measures such 
-as R-squared and adjusted R-squared.
+variables. In this case, the goal is to find a plane that best fits the data points. 
+
+The models for this assignment are fit to the data with the least-squares error:
+$$E=\sqrt{(1/n)\sum_{j=1}^{n}(f(x_j)-y_j)^2}$$
+
+and have the function structure:
+$f(x)=Acos(Bx)+Cx+D$
+
+As mentioned before, the function structure represents a combination of a cosine function, a linear 
+function, and a constant, of which are determined by the parameters $A$, $B$, $C$, and $D$. These 
+parameters are then optimized. 
 
 ## Algorithm Implementation and Development:
 
