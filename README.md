@@ -1,4 +1,6 @@
-# EE-399
+# EE-399: Introduction to Machine Learning
+#### HW 1 Submission
+#### Sabrina Hwang
 
 ## Abstract:
 This code was created for EE 399 Introduction to Machine Learning, HW 1 submission by Sabrina Hwang. 
@@ -11,7 +13,7 @@ weights of individuals. It uses the scikit-learn library to fit a linear model t
 predictions on new data. The accuracy of the model is evaluated using the mean squared error and the 
 coefficient of determination.
 
-## Introduction:
+## Introduction and Overview:
 Linear regression is a popular statistical method used to model the relationship between two variables. 
 It assumes a linear relationship between the independent variable(s) and the dependent variable. 
 In this code, we use linear regression to model the relationship between height and weight of individuals. 
@@ -37,14 +39,14 @@ library to perform the machine learning tasks. We implemented a K-means clusteri
 text documents based on their similarity. The algorithm takes the preprocessed data as input, creates a 
 vector representation of the documents, and groups them into k clusters. 
 
-### Code Description:
+### Code Description
 The code is written in Python and uses the following libraries:
     `numpy` for numerical computing
     `matplotlib` for data visualization
     `math` for mathematical functions
     `scipy` for curve fitting
     
-### Finding Minimum Error and Optimizing Parameters:
+### Finding Minimum Error and Optimizing Parameters
 The code reads a dataset of 31 points and defines a function to fit the data using least-squares curve 
 fitting. The function func(x, A, B, C, D) is a combination of a cosine function and a linear function 
 with four parameters A, B, C, D that are to be optimized. The curve_fit function from scipy library is 
@@ -62,12 +64,14 @@ parameters and sweeps through B and D parameters, and finally fixes A and D para
 through B and C parameters. The min function is used to find the minimum error and the corresponding 
 parameter values.
 
-## Usage:
+## Computational Results:
+
+### Usage
 To run the code, simply run the Python file hw1.py in any Python environment. The output will be 
 printed to the console and displayed in a pop-up window. The matplotlib library is required to display 
 the 2D error landscape plot.
 
-## Conclusion:
+## Summary and Conclusions:
 This code demonstrates how least-squares curve fitting can be used to find the parameters of a function 
 that best fit a given dataset. Additionally, it shows how a 2D error landscape can be generated to 
 visualize the relationship between the function parameters and the error. The code can be used as a 
