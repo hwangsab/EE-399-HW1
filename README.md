@@ -1,6 +1,6 @@
 # EE-399
 
-#Abstract:
+# Abstract:
 This code was created for EE 399 Introduction to Machine Learning, HW 1 submission by Sabrina Hwang. 
 The code implements a least-squares curve fitting technique to find the parameters of a given function 
 that best fits a given dataset. Additionally, it generates a 2D error landscape by sweeping through 
