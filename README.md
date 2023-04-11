@@ -1,4 +1,4 @@
-# EE-399
+## EE-399
 
 # Abstract:
 This code was created for EE 399 Introduction to Machine Learning, HW 1 submission by Sabrina Hwang. 
