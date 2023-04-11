@@ -81,6 +81,17 @@ library is used to find the optimized values of the parameters. Then, the minimu
 function and the dataset is calculated, and the results are printed along with a plot of the function 
 fit to the data. 
 
+```
+def func(x, A, B, C, D):
+    return A*np.cos(B*x) + C*x + D
+
+popt, pcov = curve_fit(func, X, Y)
+
+A, B, C, D = popt
+
+error = np.sqrt(np.mean((func(X, A, B, C, D) - Y)**2))
+```
+
 #### Problem 2: Generating 2D Error Landscape
 The code generates a 2D error landscape by sweeping through different values of the function 
 parameters and fixing two parameters at a time. The error is calculated for each combination of 
@@ -91,12 +102,50 @@ parameters and sweeps through B and D parameters, and finally fixes A and D para
 through B and C parameters. The min function is used to find the minimum error and the corresponding 
 parameter values. 
 
+For the example of a fixed parameters A and B, sweeping C and D program:
+```
+C_range = np.linspace(-5, 5, 100)
+D_range = np.linspace(30, 60, 100)
+C_grid, D_grid = np.meshgrid(C_range, D_range)
+error_grid = np.zeros_like(C_grid)
+for i in range(len(C_range)):
+    for j in range(len(D_range)):
+        C = C_range[i]
+        D = D_range[j]
+        error_grid[j,i] = np.sqrt(np.mean((func(X, A, B, C, D) - Y)**2))
+```
+
 #### Problem 3: Fitting and Applying Models to Datasets I
 The code uses the first 20 data points as training data to fit a line, a parabola, and a 19th degree
 polynomial to the specified points. Then, after computing the least-square error for each of these
 models over the training points, the program then computes the least-square error for each of these
 models on the remaining 10 data points excluded from the training data, which we refer to in the code
 as the test data. 
+
+```
+# fit line, parabola, and 19th degree polynomial
+line_coeffs = np.polyfit(X_train, Y_train, 1)
+parabola_coeffs = np.polyfit(X_train, Y_train, 2)
+poly_coeffs = np.polyfit(X_train, Y_train, 19)
+
+# compute predictions on train and test data
+Y_line_train = np.polyval(line_coeffs, X_train)
+Y_parabola_train = np.polyval(parabola_coeffs, X_train)
+Y_poly_train = np.polyval(poly_coeffs, X_train)
+
+Y_line_test = np.polyval(line_coeffs, X_test)
+Y_parabola_test = np.polyval(parabola_coeffs, X_test)
+Y_poly_test = np.polyval(poly_coeffs, X_test)
+
+# compute least square error on train and test data
+line_train_error = np.sum((Y_line_train - Y_train)**2)
+parabola_train_error = np.sum((Y_parabola_train - Y_train)**2)
+poly_train_error = np.sum((Y_poly_train - Y_train)**2)
+
+line_test_error = np.sum((Y_line_test - Y_test)**2)
+parabola_test_error = np.sum((Y_parabola_test - Y_test)**2)
+poly_test_error = np.sum((Y_poly_test - Y_test)**2)
+```
 
 #### Problem 4: Fitting and Applying Models to Datasets II
 The code uses the first 10 and last 10 data poitns as training data to fit a line, a parabola, and a 
