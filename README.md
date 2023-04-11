@@ -11,6 +11,24 @@ different values of the function parameters and fixing two parameters at a time.
 The accompanying Python code performs optimization and machine learning on the models, of which the 
 accuracy of them are then evaluated using the least squared error calculations. 
 
+## Table of Contents:
+* Abstract
+* Introduction and Overview
+* Theoretical Background
+* Algorithm Implementation and Development
+  * Code Description
+    * Problem 1: Finding Minimum Error and Optimizing Parameters
+    * Problem 2: Generating 2D Error Landscape
+    * Problem 3: Fitting and Applying Models to Datasets I
+    * Problem 4: Fitting and Applying Models to Datasets II
+* Computational Results
+  * Usage
+  * Problem 1: Finding Minimum Error and Optimizing Parameters
+  * Problem 2: Generating 2D Error Landscape
+  * Problem 3: Fitting and Applying Models to Datasets I
+  * Problem 4: Fitting and Applying Models to Datasets II
+* Summary and Conclusion
+
 ## Introduction and Overview:
 Fitting data to models remains a fundamental theme throughout optimization and machine learning processes. 
 This assignment in particular exercises tasks of fitting various kinds of models to a fixed 2D dataset. 
@@ -151,6 +169,12 @@ Line Test Data Error: 86.95136045541048
 Parabola Test Data Error: 86.16001918838907
 19th Degree Polynomial Test Data Error: 67127.9806069814
 ```
+Comparing questions II.iii and II.iv, the model generated that takes in the first 10 and last 10 data points 
+as training data and the middle 10 data points as test data (from II.iv) has a lower minimized error. The 
+magnitude at which these errors are different is that as the polynomial degree increases, the minimized 
+error will decrease more. This is most likely because the model accounts for the shape of the beginning and 
+the end, and because the dataset provided is relatively continuous, the model fits the data better if it is 
+trained with points from the beginning and the end.
 
 ## Summary and Conclusions:
 This code demonstrates how least-squares curve fitting can be used to find the parameters of a function 
