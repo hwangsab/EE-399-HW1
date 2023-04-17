@@ -7,7 +7,7 @@
 # In[138]:
 
 
-# GitHub HW1: https://github.com/hwangsab/EE-399
+# GitHub HW1: https://github.com/hwangsab/EE-399-HW1
 
 
 # In[129]:
